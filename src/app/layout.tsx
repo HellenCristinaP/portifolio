@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Menu from "@/components/menu/menu";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,20 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-              <Menu />
+        <Menu />
         {children}
-        </body>
+        <footer className="flex flex-row justify-evenly bg-[#1E0041] text-[#F2E9FF] py-4 px-10">
+          <Link href="https://github.com/HellenCristinaP" target="_blank" rel="noopener noreferrer">
+            <p className="text-sm hover:underline hover:text-shadow-[0_0_0_#F2E9FF]">GitHub</p>
+          </Link>
+          <Link href="https://www.linkedin.com/in/hellen-cristina-araujo-da-silva/" target="_blank" rel="noopener noreferrer">
+            <p className="text-sm hover:underline hover:text-shadow-[0_0_0_#F2E9FF]">LinkedIn</p>
+          </Link>
+          <Link href="https://www.instagram.com/hellen.cris.001/" target="_blank" rel="noopener noreferrer">
+            <p className="text-sm hover:underline hover:text-shadow-[0_0_0_#F2E9FF]">Instagram</p>
+          </Link>
+        </footer>
+      </body>
     </html>
   );
 }
