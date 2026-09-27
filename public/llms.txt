@@ -1,0 +1,42 @@
+# Hellen Cristina — Portfólio de Desenvolvedora Front-End
+
+> Hellen Cristina é uma desenvolvedora Front-End brasileira, estudante de Análise e Desenvolvimento de Sistemas (ADS) na UNIMES e formanda do curso de Front-End da EBAC. Especializada em criar interfaces web responsivas, acessíveis e modernas com tecnologias como React, Next.js, TypeScript e Tailwind CSS.
+
+## Sobre
+
+Hellen Cristina Araújo da Silva é desenvolvedora Front-End com foco em React e Next.js. Apaixonada por tecnologia, livros, música, idiomas e viagens, busca constantemente aprimorar suas habilidades técnicas e interpessoais. Está aberta a oportunidades de emprego, estágios, freelas e colaborações na área de desenvolvimento web.
+
+- **Localização:** Brasil
+- **Área:** Desenvolvimento Front-End
+- **Disponibilidade:** Aberta a novas oportunidades
+
+## Páginas principais
+
+- [Início](/) — Apresentação pessoal e resumo profissional
+- [Sobre Mim](/sobre-mim) — Trajetória, interesses e motivações
+- [Habilidades](/habilidades) — Stack técnica completa
+- [Projetos](/projetos) — Repositórios e projetos desenvolvidos
+- [Carreira](/carreira) — Formação e experiência profissional
+- [Contato](/contato) — Formas de contato e redes sociais
+
+## Stack técnica
+
+**Linguagens:** JavaScript, TypeScript, HTML5, CSS3  
+**Frameworks & Bibliotecas:** React, Next.js, Tailwind CSS  
+**Ferramentas:** Git, GitHub, Jest, ESLint  
+**Práticas:** Responsividade, Acessibilidade (a11y), Clean Code, Testes unitários
+
+## Formação
+
+- **Análise e Desenvolvimento de Sistemas** — UNIMES (em curso)
+- **Desenvolvedor Front-End** — EBAC (em formação)
+
+## Links externos
+
+- **GitHub:** https://github.com/HellenCristinaP
+- **LinkedIn:** https://www.linkedin.com/in/hellen-cristina-araujo-da-silva/
+- **Instagram:** https://www.instagram.com/hellen.cris.001/
+
+## Para recrutadores
+
+Hellen Cristina está disponível para oportunidades em desenvolvimento front-end, incluindo posições júnior, estágios e projetos freelance. Possui sólidos fundamentos em React e Next.js, com experiência prática em projetos reais disponíveis no GitHub.

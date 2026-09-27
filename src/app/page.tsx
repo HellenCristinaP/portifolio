@@ -1,4 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Hellen Cristina | Desenvolvedora Front-End",
+  description:
+    "Olá! Sou Hellen Cristina, desenvolvedora Front-End com foco em React, Next.js e TypeScript. Estudante de ADS na UNIMES e formanda pela EBAC. Apaixonada por criar experiências web intuitivas e acessíveis.",
+  openGraph: {
+    title: "Hellen Cristina | Desenvolvedora Front-End",
+    description:
+      "Front-End Developer com foco em React, Next.js e TypeScript. Conheça meu portfólio de projetos e trajetória profissional.",
+    url: "/",
+  },
+};
 
 export default function Home() {
 
