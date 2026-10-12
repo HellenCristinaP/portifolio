@@ -4,7 +4,7 @@ import Home from './page';
 describe('Home', () => {
   it('renders the home page', () => {
     render(Home());
-    const heading = screen.getByRole('heading', { name: /Welcome to My Portfolio/i });
+    const heading = screen.getByRole('heading', { name: /Hellen Cristina/i });
     expect(heading).toBeInTheDocument();
   });
 });

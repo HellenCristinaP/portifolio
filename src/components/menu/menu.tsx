@@ -29,6 +29,11 @@ export default function Menu() {
                         Contato
                     </Link>
                 </li>
+                <li>
+                    <Link href="/Certificados" className="text-white hover:text-gray-400">
+                        Certificados
+                    </Link>
+                </li>
             </ul>
         </nav>
     );

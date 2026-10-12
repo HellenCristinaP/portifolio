@@ -35,8 +35,6 @@ export const metadata: Metadata = {
     "portfólio",
     "Hellen Cristina",
     "ADS UNIMES",
-    "EBAC",
-    "UI developer",
     "web developer",
     "acessibilidade web",
     "interfaces responsivas",
