@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import getProjectsGitHub from "@/lib/api/project";
 import TemplateProjeto from "@/components/template/projeto";
+import { portfolioData } from "@/utils/data/data";
 
 export const metadata: Metadata = {
     title: "Projetos",
@@ -15,21 +15,17 @@ export const metadata: Metadata = {
 };
 
 export default async function Projetos() {
-    const { repos, errorMessage } = await getProjectsGitHub();
 
     return (
-        <>
+        <main className="flex flex-col items-center justify-center min-h-screen py-10 bg-[#faf7fd] border-t border-purple-200/60">
             <h1 className="text-4xl font-bold text-center my-8">Projetos</h1>
-            {errorMessage && (
-                <p className="text-red-500 text-center mx-10">{errorMessage}</p>
-            )}
-            <ul className="mx-10 md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {repos
-                    .filter((projeto) => projeto.allow_forking)
+    
+            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 px-4 sm:px-6 lg:px-8">
+                {portfolioData.projects
                     .map((projeto) => (
                         <TemplateProjeto key={projeto.id} {...projeto} />
                     ))}
             </ul>
-        </>
+        </main>
     );
 }

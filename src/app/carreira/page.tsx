@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Card from "@/components/card/card";
+import { portfolioData } from "@/utils/data/data"
 
 export const metadata: Metadata = {
   title: "Carreira",
@@ -20,14 +21,10 @@ export default function Carreira() {
       <h1 className="text-4xl font-bold text-center mt-8">Carreira</h1>
       <article className="px-4 py-6 max-w-5xl w-full">
         <div className="lg:grid md:grid-cols-3 lg:gap-10">
-          <div className="lg:col-span-1 lg:w-1/2">
-            <h2>Última experiência profissional</h2>
-            <Card cargo="Auxiliar de Escritório" empresa="Empresa X" periodo="2020 - Presente" descricao="Atuo como desenvolvedora Front-End, criando interfaces modernas e responsivas para diversos projetos." />
-          </div>
           <div className="p-4 lg:grid lg:grid-cols-2 lg:gap-10 lg:col-span-2">
-            <Card cargo="Desenvolvedora Front-End" empresa="Empresa X" periodo="2020 - Presente" descricao="Atuo como desenvolvedora Front-End, criando interfaces modernas e responsivas para diversos projetos." />
-            <Card cargo="Desenvolvedora Front-End" empresa="Empresa X" periodo="2020 - Presente" descricao="Atuo como desenvolvedora Front-End, criando interfaces modernas e responsivas para diversos projetos." />
-            <Card cargo="Desenvolvedora Front-End" empresa="Empresa X" periodo="2020 - Presente" descricao="Atuo como desenvolvedora Front-End, criando interfaces modernas e responsivas para diversos projetos." />
+            {portfolioData.career.map((item, index) => {
+              return <Card key={index} role={item.role} company={item.company} period={item.period} description={item.description} bullets={item.bullets} skills={item.skills} duration={item.duration} />;
+            })}
           </div>
         </div>
       </article>

@@ -1,3 +1,4 @@
+'use client'
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,8 +15,10 @@ export const metadata: Metadata = {
 
 export default function Habilidades() {
     return (
-        <>
+        <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 py-5 text-indigo-950">
             <h1 className="text-4xl font-bold text-center mt-8">Habilidades</h1>
-        </>
+            <h2 className="text-xl font-semibold text-center mt-4">Tecnologias e Ferramentas</h2>
+            <h2 className="text-xl font-semibold text-center mt-4">Certificados</h2>
+        </main>
     );
 }

@@ -16,11 +16,17 @@ export const metadata: Metadata = {
 export default function Home() {
 
   return (
-    <main className="flex flex-col min-h-dvh bg-[#ede0ff] text-[#1E0041] relative px-10 py-5 md:text-center md:items-center md:flex-row md:gap-10">
+    <main className="bg-[url('/backgrounds/backgroundmainmobile.webp')] bg-cover md:bg-[url('/backgrounds/backgroundmaindesktop.webp')] flex flex-col min-h-dvh text-[#1E0041] relative px-10 py-5 md:text-center md:items-center md:flex-row md:gap-10">
       {
         // Modificar a imagem, conforme o tamanho do dispositivo, para que fique responsiva e não ultrapasse a tela
       }
-      <Image src="/profile.jpeg" alt="Hellen Cristina" width={150} height={150} className="rounded-full m-auto my-5 md:m-5 md:order-2 md:w-85" />
+      <div className="flex flex-row md:items-center gap-2 m-auto md:order-1">
+        <div className="bg-[url('/me/me.webp')] bg-cover bg-center w-50 h-100 rounded-full border border-amber-400"></div>
+        <div className="bg-[url('/me/mewitheyelinear.webp')] bg-cover bg-center w-50 h-100 rounded-full border border-amber-400"></div>
+      </div>
+      {/* <Image src="/me/me.webp" alt="Hellen Cristina" width={150} height={150} className="rounded-full m-auto my-5 md:order-2" />
+      <Image src="/me/mewitheyelinear.webp" alt="Hellen Cristina" width={150} height={150} className="rounded-full m-auto my-5" /> */}
+
       <div className="flex flex-col text-center m-5 md:text-start md:ml-10">
         <p className="text-md font-semibold">Bem-vindo ao meu portfólio!</p>
         <h1 className="text-3xl font-bold">Hellen Cristina</h1>
